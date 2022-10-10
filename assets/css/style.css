@@ -52,6 +52,12 @@
 .img-settings {
     height: 100%;
     cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.img-settings:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
 }
 
 .modal-container {
@@ -59,7 +65,10 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, .7);
     position: fixed;
-    visibility: hidden;
+    visibility: hidden; 
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
 }
 
 .modal-content {
@@ -71,6 +80,8 @@
 
 #modal-img {
     width: 65vw;
+    transform: scale(0);
+    transition: all linear 0.3s;
 }
 
 #btn-close {
@@ -86,4 +97,13 @@
 
 #btn-close:hover {
     transform: rotate(180deg);
+}
+
+.modal-activate {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-activate #modal-img {
+    transform: scale(1);
 }
