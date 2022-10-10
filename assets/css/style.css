@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    height: 8vh;
+    background-color: rgb(12, 12, 12);
+}
+
+.menu-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-navbar h1 {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu-navbar h1:hover {
+    opacity: 0.7;
+}
+
+.img-container {
+    min-height: 92vh;
+    margin-top: 20px;
+}
+
+.img-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-card {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.img-settings {
+    height: 100%;
+    cursor: pointer;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    visibility: hidden;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#modal-img {
+    width: 65vw;
+}
+
+#btn-close {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+#btn-close:hover {
+    transform: rotate(180deg);
+}
